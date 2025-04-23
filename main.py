@@ -97,7 +97,7 @@ def train_mnist(epochs, net, train_loader, test_loader, optimizer, scheduler, lo
                 y_score = torch.cat((y_score, outputs.cpu()), 0)
                 
         y_score = y_score.detach().numpy()
-        evaluator = Evaluator(data_flag, 'test', size=224, root='./data')
+        evaluator = Evaluator(data_flag, 'test', size=224, root='/kaggle/input/pathmnist_zip/')
         metrics = evaluator.evaluate(y_score)
         
         val_accurate, _ = metrics
