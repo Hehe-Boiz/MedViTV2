@@ -33,7 +33,7 @@ if not os.path.exists(root_dir):
             os.makedirs(root_dir)
             
 class PADatasetDownloader:
-    def __init__(self, root_dir='/kaggle/input/data-kan/', dataset_url='https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/zr7vgbcyr2-1.zip'):
+    def __init__(self, root_dir='/kaggle/input/data-kan/other/', dataset_url='https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/zr7vgbcyr2-1.zip'):
         self.root_dir = root_dir
         self.dataset_url = dataset_url
         self.dataset_zip_path = os.path.join(self.root_dir, 'zr7vgbcyr2-1.zip')
@@ -115,7 +115,7 @@ class PADatasetDownloader:
 
 
 class FetalDatasetDownloader:
-    def __init__(self, root_dir='/kaggle/input/data-kan/', dataset_url='https://zenodo.org/records/3904280/files/FETAL_PLANES_ZENODO.zip'):
+    def __init__(self, root_dir='/kaggle/input/data-kan/other/', dataset_url='https://zenodo.org/records/3904280/files/FETAL_PLANES_ZENODO.zip'):
         self.root_dir = root_dir
         self.dataset_url = dataset_url
         self.dataset_zip_path = os.path.join(self.root_dir, 'FETAL_PLANES_ZENODO.zip')
@@ -184,7 +184,7 @@ class FetalDatasetDownloader:
 
 
 class ISICDatasetManager:
-    def __init__(self, base_dir='/kaggle/input/data-kan/'):
+    def __init__(self, base_dir='/kaggle/input/data-kan/other/'):
         self.base_dir = base_dir
         self.train_url = 'https://isic-challenge-data.s3.amazonaws.com/2018/ISIC2018_Task3_Training_Input.zip'
         self.test_url = 'https://isic-challenge-data.s3.amazonaws.com/2018/ISIC2018_Task3_Test_Input.zip'
@@ -260,7 +260,7 @@ class ISICDatasetManager:
 
 
 class CPNDatasetDownloader:
-    def __init__(self, root_dir='/kaggle/input/data-kan/', dataset_url='https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/dvntn9yhd2-1.zip'):
+    def __init__(self, root_dir='/kaggle/input/data-kan/other/', dataset_url='https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/dvntn9yhd2-1.zip'):
         self.root_dir = root_dir
         self.dataset_url = dataset_url
         self.dataset_zip_path = os.path.join(self.root_dir, 'dvntn9yhd2-1.zip')
@@ -308,7 +308,7 @@ class CPNDatasetDownloader:
 
 
 class KvasirDatasetDownloader:
-    def __init__(self, root_dir='/kaggle/input/data-kan/', dataset_url='https://datasets.simula.no/downloads/kvasir/kvasir-dataset.zip'):
+    def __init__(self, root_dir='/kaggle/input/data-kan/other/', dataset_url='https://datasets.simula.no/downloads/kvasir/kvasir-dataset.zip'):
         self.root_dir = root_dir
         self.dataset_url = dataset_url
         self.dataset_zip_path = os.path.join(self.root_dir, 'kvasir-dataset.zip')
